@@ -1,0 +1,16 @@
+.bg {
+  background-image: url("../../../../assets/Film-Fest.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 593px;  
+  /* position: relative; */
+}
+
+.text-style{
+  color: aliceblue;
+  font-size: 50px;
+  font-family: cursive;
+  /* position: absolute;
+  margin-top: 170px; */
+}

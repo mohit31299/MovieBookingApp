@@ -1,0 +1,94 @@
+<div class="bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-3 mb-3">
+        <mat-card class="s bg1 p-2">
+          <div class="text-center mt-3">
+            <img
+              class="h-25 w-25"
+              src="../../../../assets/register.png"
+              alt="login"
+            />
+          </div>
+          <h1 class="text-center mt-3">Register</h1>
+          <form [formGroup]="register" (ngSubmit)="onSubmit()">
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>Username</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  formControlName="username"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  formControlName="fullName"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input
+                  matInput
+                  type="password"
+                  formControlName="password"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input
+                  matInput
+                  type="email"
+                  formControlName="email"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input
+                  matInput
+                  type="number"
+                  formControlName="phoneNumber"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="ml-25 mt-3">
+              <mat-form-field class="width" appearance="outline">
+                <mat-label>{{ register.value.secretQuestion }}</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  formControlName="sercetAnswer"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+            </div>
+            <div class="text-center">
+              <button type="submit" mat-raised-button color="primary" [disabled]="!register.valid">
+                Register
+              </button>
+              <button  mat-raised-button color="warn" class="ml-25" routerLink="">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

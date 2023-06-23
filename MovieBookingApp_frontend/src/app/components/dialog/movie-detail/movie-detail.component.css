@@ -1,0 +1,20 @@
+.size {
+  width: 800px;
+  height: 470px;
+  
+}
+
+.color {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  /* font-weight: 100px; */
+}
+
+.bg1 {
+  background: rgba(241, 237, 201, 0.508);
+}
+
+.mr{
+  margin-left: 10px;
+}

@@ -1,0 +1,16 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+ .s{
+   box-shadow: 3px 3px 10px black;
+ }
+
+
+ .w{
+   width: 400px;
+ }
+
+ .m{
+   margin-left: 80px;
+ }

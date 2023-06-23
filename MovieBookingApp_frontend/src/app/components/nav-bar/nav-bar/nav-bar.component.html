@@ -1,0 +1,17 @@
+<mat-toolbar [color]="isLoggedIn?primary:accent">
+  <button mat-icon-button [routerLink]="isLoggedIn?'movie':''">
+    <mat-icon>movie</mat-icon>
+  </button>
+  <!-- <mat-icon *ngIf="isLoggedIn">movie</mat-icon> -->
+  <span class="p-1">Movie Booking App</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button *ngIf="!isLoggedIn" mat-menu-item routerLink="login">login</button>
+    <button *ngIf="!isLoggedIn" mat-menu-item routerLink="register">register</button>
+    <button *ngIf="isLoggedIn" mat-menu-item routerLink="profile">View Profile</button>
+    <button *ngIf="isLoggedIn" mat-menu-item (click)="logout()" routerLink="login">logout</button>
+  </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,16 @@
+.bg{
+    background-color: rgba(200, 211, 212, 0.391);
+    height: 730px;
+    position: relative;
+}
+.width{
+    width: 95%;
+}
+
+.ml-2{
+    margin-left: 20px;
+}
+
+/* .mb-2{
+    margin-bottom: 200px;
+} */

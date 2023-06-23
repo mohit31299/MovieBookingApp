@@ -1,0 +1,28 @@
+<div class="w">
+  <div class="bg-primary text-center p-2">
+    <span style="font-size: 25px">Book Seats</span>
+  </div>
+  <mat-card class="p-4">
+    <div class="fw-bold h2 p-3">{{ data.movieName }}</div>
+    <form (ngSubmit)="onSubmit()">
+      <div class="ml-25 mt-3">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Seats</mat-label>
+          <input
+            matInput
+            type="number"
+            [(ngModel)]="ticket.bookedSeats"
+            name="ticket.bookedSeats"
+            placeholder="enter here"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="text-center">
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+        <button mat-raised-button class="mr" (click)="closeDialog()" color="warn">Cancel</button>
+      </div>
+      
+    </form>
+  </mat-card>
+</div>

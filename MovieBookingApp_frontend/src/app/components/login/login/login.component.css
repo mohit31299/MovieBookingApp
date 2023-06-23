@@ -1,0 +1,32 @@
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-8 {
+    margin-top: 55px;
+  }
+.s {
+  box-shadow: 1px 1px 8px black;
+}
+
+.width {
+  width: 95%;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+
+/* .color{
+      color: rgb(246, 247, 248);
+  } */
+.bg {
+  background-image: url("../../../../assets/home.jpg");
+  height: 593px;
+  position: relative;
+}
+.bg1 {
+  
+  background: rgba(253, 253, 253, .85);
+ 
+}

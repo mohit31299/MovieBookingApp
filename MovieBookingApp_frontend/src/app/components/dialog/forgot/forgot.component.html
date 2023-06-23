@@ -1,0 +1,55 @@
+<div class="w">
+  <div class="bg-primary text-center p-2">
+    <span style="font-size: 25px">Reset Password</span>
+    <button mat-icon-button (click)="closeDialog()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <mat-card class="p-4">
+    <!-- <h1 class="text-center mt-3">Reset Password</h1> -->
+    <form (ngSubmit)="onSubmit()">
+      <div class="ml-25 mt-3">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            type="text"
+            [(ngModel)]="forgotForm.username"
+            name="username"
+            placeholder="enter here"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="ml-25 mt-3">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            type="password"
+            [(ngModel)]="forgotForm.password"
+            name="password"
+            placeholder="enter here"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="ml-25 mt-3">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>{{ secretQuestion }}</mat-label>
+          <input
+            matInput
+            type="text"
+            [(ngModel)]="forgotForm.sercetAnswer"
+            name="sercetAnswer"
+            placeholder="enter here"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="text-center">
+        <button mat-raised-button type="submit" color="primary">Submit</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,41 @@
+<div class="size bg1">
+  <div class="color bg-primary p-3">{{ movie.movieName }}</div>
+
+  <mat-card-content>
+    <div class="p-3">
+      <span class="fw-bold h2">Rating: </span
+      ><span class="h2">{{ movie.rating }}/10</span>
+    </div>
+    <div class="p-3">
+      <span class="fw-bold h2">Genre: </span
+      ><span class="h2">{{ movie.genre }}</span>
+    </div>
+    <div class="p-3">
+      <span class="fw-bold h2">Audio: </span
+      ><span class="h2">{{ movie.audio }}</span>
+    </div>
+    <div class="p-3">
+      <span class="fw-bold h2"> Available Seats: </span
+      ><span class="h2">{{ movie.seatsAvailable }} </span>
+    </div>
+    <div class="p-3">
+      <span class="fw-bold h2">Theater: </span
+      ><span class="h2">{{ movie.theatreName }}</span>
+    </div>
+  </mat-card-content>
+  <div class="text-center">
+    <button mat-raised-button (click)="openDialog()" color="primary">
+      Book
+    </button>
+    <button
+    *ngIf="roleStatus"
+      mat-raised-button
+      (click)="deleteMovie()"
+      style="margin-left: 20px"
+      color="warn"
+    >
+      Delete
+    </button>
+    <button mat-raised-button class="mr" (click)="closeDialog()" color="warn">Cancel</button>
+  </div>
+</div>
